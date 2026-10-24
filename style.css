@@ -2960,3 +2960,18 @@ main[data-scroll-container] {
     box-shadow: none !important;
     background: transparent !important;
 }
+
+.feature-image-full {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.gallery-full-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
