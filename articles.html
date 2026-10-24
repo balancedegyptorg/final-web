@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles & Research | Balanced Egypt</title>
+    <meta name="description" content="Original research, historical deep dives, and field surveys on food waste in Egypt, written by our youth research team.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress-bar" data-scroll-progress></div>
+
+    <header class="navbar" data-navbar>
+        <div class="navbar-container">
+            <a href="index.html" class="nav-logo">
+                <img src="logo.png" alt="Balanced Egypt home">
+            </a>
+            <nav class="nav-menu" id="site-nav" data-nav-menu aria-label="Primary">
+    <a href="index.html" class="nav-link">Home</a>
+    
+  <!-- DROPDOWN PARENT FOR ABOUT -->
+    <div class="dropdown-parent" style="display: inline-block;">
+        <a >About </a>
+        <div class="dropdown-menu">
+            <a href="why_us.html">Why Balanced Egypt</a>
+            <a href="our_team.html">Our Team</a>
+        </div>
+    </div>
+    <a href="initiatives.html" class="nav-link">Initiatives</a>
+    <a href="articles.html" class="nav-link">Articles</a>
+    <a href="global-voice.html" class="nav-link">Global Voice</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="contact.html#volunteer" class="btn btn-primary nav-btn">Volunteer</a>
+</nav>
+            <button class="burger" data-burger type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main" data-scroll-container>
+        <!-- MAGAZINE INTRO HERO -->
+        <section class="section section-dark editorial-hero">
+            <div class="container">
+                <span class="tag">Research & Perspectives</span>
+                <h1 class="mega-title reveal-text">The Stories Behind <br><span class="italic-serif">the Waste.</span></h1>
+                <p class="lead-text reveal-text">Original research, historical deep dives, and real surveys from our own team. Written in plain language, for anyone who wants to understand Egypt's food waste problem, and help fix it.</p>
+            </div>
+        </section>
+
+        <!-- FILTER & ENGINE CONSOLE -->
+        <section class="magazine-console-section">
+            <div class="container">
+                <div class="console-box">
+                    <div class="search-input-wrap">
+                        <input type="text" id="article-search" placeholder="Search by topic, like Ramadan, supply chains, or ancient Egypt" aria-label="Search articles">
+                    </div>
+                    <div class="filter-buttons-row">
+                        <button type="button" class="filter-tag active" data-filter="all">All Articles</button>
+                        <button type="button" class="filter-tag" data-filter="field-research">Research & Data</button>
+                        <button type="button" class="filter-tag" data-filter="historical">History & Culture</button>
+                        <button type="button" class="filter-tag" data-filter="policy-briefs">Society & Behavior</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN MAGAZINE GRID -->
+        <section class="section section-light">
+            <div class="container">
+                <!-- FEATURED COVER STORY -->
+                <div class="featured-cover-story scroll-reveal" data-category="policy-briefs">
+                    <div class="grid grid-2 items-start">
+                        <div class="fcs-media">
+                            <!-- ARTICLE COVER: FROM FASTING TO FEASTING, RAMADAN FOOD WASTE -->
+                            <img src="ramadan.jpg" alt="Iftar table set with food during Ramadan in Egypt">
+                        </div>
+                        <div class="fcs-context">
+                            <span class="article-category-tag">Society & Behavior</span>
+                            <span class="date-stamp">Mar 3, 2026 • 4 Min Read</span>
+                            <h2>From Fasting to Feasting: The Crisis Behind Ramadan Feast</h2>
+                            <p class="byline">By Mariam Kamal & Loren Emad Morgan</p>
+                            <p class="body-text">Egypt loses close to 9 million tons of food every year, and Ramadan makes it worse, not better. We surveyed 97 households across the country to find out why a month built on moderation has become one of Egypt's biggest waste events, and what would actually get people to change.</p>
+                            <a href="article_three.html" class="btn btn-primary">Read the Full Article</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STANDALONE ARTICLES FEED -->
+                <p class="no-results" id="no-results" role="status" hidden>No articles match that search. Try another topic, or choose All Articles.</p>
+                <div class="grid grid-3 magazine-feed" id="magazine-target-grid">
+                    <article class="article-card scroll-reveal" data-category="field-research">
+                        <div class="ac-img-wrap">
+                            <!-- ARTICLE COVER: WHERE DOES OUR FOOD GO TO WASTE -->
+                            <img src="where.jpg" alt="Supply chain and food distribution illustration">
+                        </div>
+                        <div class="ac-content">
+                            <div class="ac-meta"><span>Dec 23, 2024</span> • <span>6 Min Read</span></div>
+                            <h3 class="ac-title">Where Does Our Food Go to Waste? Tracing Loss From Farm to Table</h3>
+                            <p class="ac-byline">By Mariam Hossam & Amr Muhammed</p>
+                            <p class="ac-excerpt">Almost a third of all food produced worldwide never gets eaten. We trace exactly where it disappears, from overproduction on farms, to breakdowns in cold storage, to what ends up scraped off a restaurant plate, and what each stage tells us about fixing the system.</p>
+                            <a href="article_one.html" class="btn-text">Read Analysis →</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card scroll-reveal" data-category="historical">
+                        <div class="ac-img-wrap">
+                            <!-- ARTICLE COVER: ANCIENT EGYPT FOOD MANAGEMENT -->
+                            <img src="old_eg.avif" alt="Ancient Egyptian granary and food storage artwork">
+                        </div>
+                        <div class="ac-content">
+                            <div class="ac-meta"><span>Jan 24, 2025</span> • <span>10 Min Read</span></div>
+                            <h3 class="ac-title">What Ancient Egypt Can Teach Us About Food Waste</h3>
+                            <p class="ac-byline">By Mohamed Naguib, Loren Emad Morgan & Youssef Labib</p>
+                            <p class="ac-excerpt">Long before sustainability became a global buzzword, ancient Egyptians were drying, salting, and repurposing nearly everything they harvested. We look at what their granaries, rituals, and resourcefulness still have to teach us today.</p>
+                            <a href="article_two.html" class="btn-text">Read Analysis →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <img src="full_logo.png" alt="Balanced Egypt logo" class="footer-logo">
+                        <p class="body-text color-muted">A youth led Egyptian NGO working to end food waste through research, education, and community action.</p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Platform</h4>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="initiatives.html">Initiatives</a>
+                        <a href="articles.html">Articles</a>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Get Involved</h4>
+                        <a href="global-voice.html">Global Voice</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="contact.html#volunteer">Volunteer With Us</a>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Stay in the Loop</h4>
+                        <p class="body-text color-muted">Get our latest research, field notes, and project updates sent straight to your inbox. No spam, just the work.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required aria-label="Email address" autocomplete="email">
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Balanced Egypt. All rights reserved. National Civil Institution.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Balanced Egypt on LinkedIn">LN</a><a href="#" aria-label="Balanced Egypt on Instagram">IG</a><a href="#" aria-label="Balanced Egypt on X">X</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
