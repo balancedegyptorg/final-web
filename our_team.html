@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Balanced Egypt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress-bar" data-scroll-progress></div>
+
+    <header class="navbar" data-navbar>
+        <div class="navbar-container">
+            <a href="index.html" class="nav-logo" aria-label="Balanced Egypt Home">
+                <img src="logo.png" alt="Balanced Egypt home">
+            </a>
+            <nav class="nav-menu" id="site-nav" data-nav-menu aria-label="Primary">
+                <a href="index.html" class="nav-link">Home</a>
+                
+                <!-- DROPDOWN PARENT FOR ABOUT -->
+                <div class="dropdown-parent" style="display: inline-block;">
+                    <a class="nav-link active">About ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="why_us.html">Why Balanced Egypt</a>
+                        <a href="our_team.html">Our Team</a>
+                    </div>
+                </div>
+
+                <a href="initiatives.html" class="nav-link">Initiatives</a>
+                <a href="articles.html" class="nav-link">Articles</a>
+                <a href="global-voice.html" class="nav-link">Global Voice</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="contact.html#volunteer" class="btn btn-primary nav-btn">Volunteer</a>
+            </nav>
+            <button class="burger" data-burger type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main" data-scroll-container>
+        <!-- ABOUT HERO -->
+        <section class="section section-dark editorial-hero">
+            <div class="container">
+                <span class="tag">Who We Are</span>
+                <h1 class="mega-title reveal-text">Built by young people who <br>translate conviction into<span class="italic-serif"> practical action.</span></h1>
+            </div>
+        </section>
+
+        <!-- WHO WE ARE & STORY (RESTRUCTURED FOR EDITORIAL BREVITY) -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="grid grid-2 line-height-spaced" style="align-items: start; gap: 4rem;">
+                    <div>
+                        <span class="tag">Our Story</span>
+                        <h2 class="section-title text-reveal" style="margin-bottom: 1rem;">From a focused question to a wider change.</h2>
+                        <p class="body-text" style="font-weight: 600; color: var(--primary, #e8764b); margin-bottom: 2rem;">A youth-led Egyptian initiative working to bring food waste into sharper focus.</p>
+                        
+                        <div class="sticky-media-box" style="border-radius: 12px; overflow: hidden;">
+                            <img src="team.jpg" alt="The Balanced Egypt team" style="width: 100%; display: block;">
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 2.2rem;">
+                        <div>
+                            <h3 class="mini-headline" style="color: var(--primary, #e8764b); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.08em; margin-bottom: 0.75rem;">How We Started</h3>
+                            <p class="body-text" style="line-height: 1.7; font-size: 1.05rem;">
+                                Balanced Egypt began with a question: why is food waste treated as an everyday inconvenience rather than a core sustainability challenge? Founded by Mohamed Naguib, we grew from the conviction that addressing waste starts by understanding its systemic roots and giving young people a platform to lead.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="mini-headline" style="color: var(--primary, #e8764b); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.08em; margin-bottom: 0.75rem;">Our Approach</h3>
+                            <p class="body-text" style="line-height: 1.7; font-size: 1.05rem;">
+                                Through education, public awareness, and research, we turn food waste into an entry point for resource responsibility. Lasting progress requires clear data, practical responses, and informed public dialogue.
+                            </p>
+                        </div>
+
+                        <div class="grid grid-2 gap-sm current-mission-vision" style="margin-top: 0.5rem;">
+                            <div class="pillar-box" style="background: rgba(232, 118, 75, 0.04); border-left: 3px solid #e8764b; padding: 1.5rem; border-radius: 0 8px 8px 0;">
+                                <h5 style="color: #111; font-weight: 700; margin-bottom: 0.5rem;">Our Vision</h5>
+                                <p class="small-text" style="font-size: 0.9rem; line-height: 1.5;">An Egypt where food is valued, avoidable waste is challenged, and young people shape a sustainable food system.</p>
+                            </div>
+                            <div class="pillar-box" style="background: rgba(232, 118, 75, 0.04); border-left: 3px solid #e8764b; padding: 1.5rem; border-radius: 0 8px 8px 0;">
+                                <h5 style="color: #111; font-weight: 700; margin-bottom: 0.5rem;">Our Mission</h5>
+                                <p class="small-text" style="font-size: 0.9rem; line-height: 1.5;">To advance food waste understanding through research, education, and local community action.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CIRCULAR SENIOR LEADERSHIP ROSTER -->
+        <section class="section leadership-section">
+            <div class="container">
+                <h2 class="leadership-main-title">SENIOR LEADERSHIP</h2>
+
+                <div class="leadership-roster-grid">
+                    <!-- Mohamed Naguib -->
+                    <div class="leadership-card scroll-reveal">
+                        <div class="circle-avatar-wrap">
+                            <img src="mohamed_n.jpg" alt="Mohamed Naguib">
+                        </div>
+                        <h3 class="member-name">MOHAMED NAGUIB</h3>
+                        <p class="member-title">Founder and Chairperson</p>
+                        <a href="bio_mohamed_naguib.html" class="btn-read-bio">READ BIO</a>
+                    </div>
+
+                    <!-- Mariam Hossam -->
+                    <div class="leadership-card scroll-reveal">
+                        <div class="circle-avatar-wrap">
+                            <img src="m_hossam.jpg" alt="Mariam Hossam">
+                        </div>
+                        <h3 class="member-name">MARIAM HOSSAM</h3>
+                        <p class="member-title">Operations Co-Director</p>
+                        <a href="bio_mariam_hossam.html" class="btn-read-bio">READ BIO</a>
+                    </div>
+
+                    <!-- Loren Saad -->
+                    <div class="leadership-card scroll-reveal">
+                        <div class="circle-avatar-wrap">
+                            <img src="loren.jpg" alt="Loren Saad">
+                        </div>
+                        <h3 class="member-name">LOREN SAAD</h3>
+                        <p class="member-title">Public Policy & Partnerships Advisor</p>
+                        <a href="bio_loren_saad.html" class="btn-read-bio">READ BIO</a>
+                    </div>
+
+                    <!-- Malak Gomaa -->
+                    <div class="leadership-card scroll-reveal">
+                        <div class="circle-avatar-wrap">
+                            <img src="malak_g.jpg" alt="Malak Gomaa">
+                        </div>
+                        <h3 class="member-name">MALAK GOMAA</h3>
+                        <p class="member-title">Chief Communications Officer</p>
+                        <a href="bio_malak_gomaa.html" class="btn-read-bio">READ BIO</a>
+                    </div>
+                 <!-- Malak Gomaa -->
+                    <div class="leadership-card scroll-reveal">
+                        <div class="circle-avatar-wrap">
+                            <img src="minna_ibrahim.jpg" alt="minna_ibrahim">
+                        </div>
+                        <h3 class="member-name">MINNA IBRAHIM</h3>
+                        <p class="member-title">Chief R&D Officer</p>
+                        <a href="bio_minna_ibrahim.html" class="btn-read-bio">READ BIO</a>
+                    </div>
+                    <!-- Mariam Hisham -->
+                    <div class="leadership-card scroll-reveal">
+                        <div class="circle-avatar-wrap">
+                            <img src="m_hisham.jpg" alt="Mariam Hisham">
+                        </div>
+                        <h3 class="member-name">MARIAM HISHAM</h3>
+                        <p class="member-title">Chief Projects Officer</p>
+                        <a href="bio_mariam_hisham.html" class="btn-read-bio">READ BIO</a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <img src="full_logo.png" alt="Balanced Egypt logo" class="footer-logo">
+                        <p class="body-text color-muted">A youth led Egyptian NGO working to end food waste through research, education, and community action.</p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Platform</h4>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="initiatives.html">Initiatives</a>
+                        <a href="articles.html">Articles</a>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Get Involved</h4>
+                        <a href="global-voice.html">Global Voice</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="contact.html#volunteer">Volunteer</a>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Stay in the Loop</h4>
+                        <p class="body-text color-muted">Get occasional updates on our research, programs, and results, straight to your inbox.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required aria-label="Email address" autocomplete="email">
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Balanced Egypt. All rights reserved. National Civil Institution.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Balanced Egypt on LinkedIn">LN</a><a href="#" aria-label="Balanced Egypt on Instagram">IG</a><a href="#" aria-label="Balanced Egypt on X">X</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
