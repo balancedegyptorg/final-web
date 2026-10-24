@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Balanced Egypt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "mDg3PtxIhayj-IP8U",
+      });
+   })();
+</script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress-bar" data-scroll-progress></div>
+
+    <header class="navbar" data-navbar>
+        <div class="navbar-container">
+            <a href="index.html" class="nav-logo">
+               <img src="logo.png" alt="Balanced Egypt home">
+            </a>
+            <nav class="nav-menu" id="site-nav" data-nav-menu aria-label="Primary">
+    <a href="index.html" class="nav-link">Home</a>
+    
+   <!-- DROPDOWN PARENT FOR ABOUT -->
+    <div class="dropdown-parent" style="display: inline-block;">
+        <a >About </a>
+        <div class="dropdown-menu">
+            <a href="why_us.html">Why Balanced Egypt</a>
+            <a href="our_team.html">Our Team</a>
+        </div>
+    </div>
+
+    <a href="initiatives.html" class="nav-link">Initiatives</a>
+    <a href="articles.html" class="nav-link">Articles</a>
+    <a href="global-voice.html" class="nav-link">Global Voice</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="contact.html#volunteer" class="btn btn-primary nav-btn">Volunteer</a>
+</nav>
+            <button class="burger" data-burger type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main" data-scroll-container>
+        <!-- CONTACT HUB CORE SECTION -->
+        <section class="section section-dark editorial-hero">
+            <div class="container">
+                <span class="tag">Get in Touch</span>
+                <h1 class="mega-title reveal-text">Let’s build something <br><span class="italic-serif">together</span>.</h1>
+            </div>
+        </section>
+
+        <!-- COMPREHENSIVE SPLIT WORKFLOW INTERACTION -->
+        <section class="section section-light" id="volunteer">
+            <div class="container">
+                <div class="grid grid-2 layout-fix-contact">
+                    <!-- LEFT CORNER CONTEXT DETAILS -->
+                    <div class="contact-details-panel">
+                        <span class="tag">Contact</span>
+                        <h2>Questions, partnerships, volunteering</h2>
+                        <p class="body-text color-muted">Reach us for research partnerships, school programs, press questions, or to volunteer.</p>
+                        
+                        <div class="meta-link-block">
+                            <h5>General and press</h5>
+                            <a href="mailto:info@balancedegypt.org" class="massive-mail-link">info@balancedegypt.org</a>
+                        </div>
+
+                        <div class="meta-link-block">
+                            <h5>Where we are</h5>
+                            <p class="body-text" >Cairo Governorate, Egypt.</p>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT CORNER INTERACTIVE CAPTURE SYSTEM FORM -->
+                    <div class="contact-form-card" id="form-block">
+                        <span class="tag">Send a message</span>
+                        <h3>Tell us how you’d like to get involved</h3>
+                        <form class="master-action-form" id="contactForm" onsubmit="sendMail(event)">
+    <div class="form-row-split">
+        <div class="field-node">
+            <label for="usr-name">Full name *</label>
+            <input type="text" id="usr-name" name="name" autocomplete="name" required placeholder="Your name">
+        </div>
+        <div class="field-node">
+            <label for="usr-email">Email address *</label>
+            <input type="email" id="usr-email" name="email" autocomplete="email" required placeholder="name@example.org">
+        </div>
+    </div>
+
+    <!-- Phone Number and Organization Row -->
+    <div class="form-row-split">
+        <div class="field-node">
+            <label for="usr-phone">Phone number *</label>
+            <input type="tel" id="usr-phone" name="phone" autocomplete="tel" required placeholder="+20 123 456 7890">
+        </div>
+        <div class="field-node">
+            <label for="usr-org">Organization or university</label>
+            <input type="text" id="usr-org" name="organization" autocomplete="organization" placeholder="Optional">
+        </div>
+    </div>
+
+    <div class="field-node">
+        <label for="usr-intent">I’m getting in touch to *</label>
+        <select id="usr-intent" name="subject_intent" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="volunteer">Volunteer with Balanced Egypt</option>
+            <option value="research">Collaborate on research</option>
+            <option value="corporate">Start a corporate partnership</option>
+            <option value="media">Ask a press question</option>
+        </select>
+    </div>
+
+    <div class="field-node">
+        <label for="usr-msg">Message *</label>
+        <textarea id="usr-msg" name="message" rows="6" required placeholder="Tell us a bit about what you have in mind"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary fluid-trigger-btn">Send message</button>
+</form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                      <img src="full_logo.png" alt="Balanced Egypt Logo" class="footer-logo">
+                        <p class="body-text color-muted">A youth led Egyptian NGO working to end food waste through research, education, and community action.</p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Platform</h4>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="initiatives.html">Initiatives</a>
+                        <a href="articles.html">Articles</a>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Get Involved</h4>
+                        <a href="global-voice.html">Global Voice</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="contact.html#volunteer">Volunteer With Us</a>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Stay in the Loop</h4>
+                        <p class="body-text color-muted">Get our latest research, field notes, and project updates sent straight to your inbox. No spam, just the work.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required aria-label="Email address" autocomplete="email">
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Balanced Egypt. All rights reserved. Registered National Civil Institution.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Balanced Egypt on LinkedIn">LN</a><a href="#" aria-label="Balanced Egypt on Instagram">IG</a><a href="#" aria-label="Balanced Egypt on X">X</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        function sendMail(event) {
+            if (event) event.preventDefault();
+
+            let intentSelect = document.getElementById("usr-intent");
+            let selectedSubject = intentSelect.options[intentSelect.selectedIndex].text;
+
+            let parms = {
+                name: document.getElementById("usr-name").value,
+                email: document.getElementById("usr-email").value,
+                phone: document.getElementById("usr-phone").value,
+                organization: document.getElementById("usr-org").value || "N/A",
+                subject: selectedSubject,
+                message: document.getElementById("usr-msg").value
+            };
+
+            emailjs.send("service_cslqtgk", "template_7eatpfr", parms)
+                .then(function() {
+                    alert("Message Sent!");
+                    document.getElementById("contactForm").reset();
+                })
+                .catch(function(error) {
+                    alert("Failed to send message: " + JSON.stringify(error));
+                });
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
